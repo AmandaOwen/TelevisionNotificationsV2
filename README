@@ -1,0 +1,8 @@
+This application is an attempt to refine and extend the previous television notification app I created. 
+
+Plans for this app: 
+1. Check UK TV listings via the Radio Times dat feeds.  * Existing functionality, being refined.
+2. Allow users to find a new series by typing its name. * Existing functionality, being refined.
+3. Allow users to find a list of upcoming new series.   * Existing functionality, being refined.
+4. Allow users to schedule an email to let them know when a new series is due. 
+5. Allow users to schedule an email to let them know if a "Monitored" series changes timeslot.
