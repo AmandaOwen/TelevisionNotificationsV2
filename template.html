@@ -75,7 +75,16 @@
         </div>
         <p class="lead">{{lead}}</p>
       </div>
-
+		
+		<div class="row">
+		
+			{% if formaction %}
+			<form id="TVForm" action="{{ formaction }}" method="post">
+				{{ formcontent }}
+			</form>
+			{% endif %}
+		
+		</div>
 	  
 	  
       <div id="push"></div>

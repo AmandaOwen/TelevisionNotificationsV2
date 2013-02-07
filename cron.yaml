@@ -1,0 +1,4 @@
+cron:
+- description: check channel: BBC1
+  url: /cron/possibles/92
+  schedule: every day 00:07
