@@ -1,0 +1,24 @@
+application: televisionnotificationsv2
+version: 1
+runtime: python
+api_version: 1
+
+handlers:
+# ----------------------------- (1) static folders ---------------------- 
+- url: /img
+  static_dir: img
+- url: /css
+  static_dir: css
+- url: /javascript
+  static_dir: javascript
+
+# ----------------------------- (2) Automated, daily : adding facts to datastore files
+# ----------------- path to check channel listings: ----------------------------------
+- url: /cron/possibles/(.*)
+  script: cron-possibles.py?channel=\1
+  
+  # ----------------------------- (3) Main pages
+# ----------------- path to check channel listings: ----------------------------------
+- url: /
+  script: selectchannels.py
+

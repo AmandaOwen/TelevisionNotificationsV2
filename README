@@ -6,3 +6,4 @@ Plans for this app:
 3. Allow users to find a list of upcoming new series.   * Existing functionality, being refined.
 4. Allow users to schedule an email to let them know when a new series is due. 
 5. Allow users to schedule an email to let them know if a "Monitored" series changes timeslot.
+6. Notify admin on change to channels.dat from Radiotimes website. 
