@@ -11,6 +11,8 @@ handlers:
   static_dir: css
 - url: /javascript
   static_dir: javascript
+- url: /js
+  static_dir: js
 
 # ----------------------------- (2) Automated, daily : adding facts to datastore files
 # ----------------- path to check channel listings: ----------------------------------
@@ -21,4 +23,6 @@ handlers:
 # ----------------- path to check channel listings: ----------------------------------
 - url: /
   script: selectchannels.py
+- url: /series/
+  script: selectseries.py
 

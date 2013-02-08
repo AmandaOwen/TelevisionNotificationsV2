@@ -8,7 +8,7 @@
     <meta name="author" content="">
 
     <!-- CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
 
       /* Sticky footer styles
@@ -55,6 +55,13 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+	
+	<!-- Get latest version of jQuery from Google's repositry -->
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	
+	<script src="/js/bootstrap.js"></script>	
+	<!-- Functions to select the channels -->
+	<script src="/js/tvchannels.js"></script>	
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../assets/ico/apple-touch-icon-144-precomposed.png">
@@ -74,18 +81,18 @@
           <h1>Television Notifications</h1>
         </div>
         <p class="lead">{{lead}}</p>
-      </div>
-		
 		<div class="row">
 		
 			{% if formaction %}
-			<form id="TVForm" action="{{ formaction }}" method="post">
+			<form id="TVForm" action="{{ formaction }}" method="post" >
 				{{ formcontent }}
 			</form>
 			{% endif %}
 		
 		</div>
 	  
+      </div>
+		
 	  
       <div id="push"></div>
     </div>
